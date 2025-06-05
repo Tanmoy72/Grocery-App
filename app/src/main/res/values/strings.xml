@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GroceryApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstName_text">Don"'"t Have Account? <font color='#40aa54'> Sign up</font></string>
+    <string name="login_text">Already Have Account? <font color='#40aa54'> Login</font></string>
+    <string name="resend_text">Did you don"'"t get a code? <font color='#40aa54'> Resend</font></string>
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SignUpFragment">
+
+<TextView
+    android:id="@+id/welcomeTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="welcome to our\n grocery shop"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="70dp"
+    android:layout_marginLeft="30dp"
+    />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTextView"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/layoutSignOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:id="@+id/nameEditTextSignup"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="....."
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/image_gray_stock_bk"
+
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:id="@+id/phoneEditTextSignup"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="....."
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/image_gray_stock_bk"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Password"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:id="@+id/passwordEditTextSignUp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:drawableRight="@drawable/eye"
+                    android:textColor="@color/black"
+                    android:hint="....."
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/image_gray_stock_bk"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Conform Password"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:id="@+id/conformEditTextSignUp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:drawableRight="@drawable/eye"
+                    android:textColor="@color/black"
+                    android:hint="....."
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/image_gray_stock_bk"
+
+                    />
+
+
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutSignOut">
+
+                <TextView
+                    android:id="@+id/signupText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textSize="18sp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+                <ImageView
+                    android:id="@+id/signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bk"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/baseline_arrow_right_alt_24"/>
+                <TextView
+                    android:id="@+id/goToLoginPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/signupText"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="@string/login_text"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.LoginPageFragment">
+
+    <ImageView
+        android:id="@+id/shoppingCartImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/shopping_cart"
+        android:background="@drawable/round_shape_green_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to our"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shoppingCartImg"/>
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Grocery"
+        android:textSize="24sp"
+        android:textColor="@color/green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/phoneNumLogin"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:hint="....."
+            android:textColorHint="@color/black"
+            android:background="@drawable/edittext_gray_color_bk"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:hint="....."
+            android:drawableRight="@drawable/eye"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edittext_gray_color_bk"
+
+            />
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:background="@drawable/edittext_bk"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/googleTextView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/google_icon_rounded"
+        android:background="@drawable/image_red_stock_bk"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="10dp"
+        android:textSize="18sp"
+        android:text="Google"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/appleTextView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/apple_icon_rounded"
+        android:background="@drawable/image_gray_stock_bk"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:textSize="18sp"
+        android:text="Apple"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/signupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/googleTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/firstName_text"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
